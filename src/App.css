@@ -1,0 +1,59 @@
+.background {
+  background-color: lightgrey;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  min-width: 480px;
+}
+
+.note-border {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-body-text {
+  background-color: lightgrey;
+  font-size: 16px;
+  color: black;
+  margin-left: 2vw;
+  max-width: 75%;
+}
+
+.icon {
+  cursor: pointer;
+  color: black;
+  margin-right: 2vw;
+}
+
+.note-header {
+  color: black;
+  font-size: 14px;
+  margin-left: 2vw;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.create-container {
+  display: flex;
+  margin-right: 2vw;
+  justify-content: space-between;
+}
+
+.note-create {
+  background-color: lightgrey;
+  font-size: 16px;
+  color: black;
+  margin-left: 2vw;
+  width: 75%;
+}
