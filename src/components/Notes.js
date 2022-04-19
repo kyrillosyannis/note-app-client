@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {deleteNote, updateNote} from "../api/notesApi";
 
 const Notes = ({notes, triggerRefresh}) => {
@@ -31,7 +31,7 @@ const Notes = ({notes, triggerRefresh}) => {
                 onKeyPress={handleKeyPress}
                 onClick={() => setSelectedNote(note)}
             >
-                <p contentEditable
+                <p contentEditable    //TODO this can be improved to avoid react warning
                    className='note-body-text'
                    onChange={handleChange}
                 >
