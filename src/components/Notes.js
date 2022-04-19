@@ -5,10 +5,6 @@ const Notes = ({notes, triggerRefresh}) => {
 
     const [selectedNote, setSelectedNote] = useState(0);
 
-    const handleChange = event => {
-        console.log(event);
-    };
-
     const handleKeyPress = event => {
         if (event.key === 'Enter') {
             event.preventDefault();
@@ -33,7 +29,6 @@ const Notes = ({notes, triggerRefresh}) => {
             >
                 <p contentEditable    //TODO this can be improved to avoid react warning
                    className='note-body-text'
-                   onChange={handleChange}
                 >
                     {note.content}
                 </p>
