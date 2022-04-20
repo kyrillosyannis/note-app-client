@@ -17,6 +17,12 @@ const NoteCreator = ({triggerRefresh}) => {
             .catch(error => console.error(error));
     };
 
+    const handleEnterKeySubmission = event => {
+        if (event.key === 'Enter') {
+            create();
+        }
+    };
+
     return (
         <>
             <div className='create-container'>
@@ -27,6 +33,7 @@ const NoteCreator = ({triggerRefresh}) => {
                        name="name"
                        placeholder='Enter todo...'
                        value={inputText}
+                       onKeyPress={handleEnterKeySubmission}
                 />
                 <button
                     onClick={create}>
