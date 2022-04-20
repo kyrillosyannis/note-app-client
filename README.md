@@ -1,3 +1,25 @@
+This project is a good example that centralized state management (Redux) 
+is necessary even for small apps like this one. Bad practices like passing functions
+down to children components can be avoided this way. Also, MVC layers will be more 
+loosely coupled and clean.
+Note for next steps of development: test suite should be expanded to test app logic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
