@@ -11,8 +11,8 @@ const headerAttributes = {
     'Content-Type': 'application/json;charset=UTF-8',
 };
 
-export const fetchAllNotes = () => {
-    return fetch(BASE_URL, {
+export const fetchAllNotes = (pageNumber) => {
+    return fetch(`${BASE_URL}?pageNumber=${pageNumber}`, {
         headers: {...headerAttributes},
     })
         .then(handleResponse)
