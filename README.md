@@ -1,4 +1,4 @@
-This project is a good example that centralized state management (Redux) 
+This project is a good example that centralized state management (**Redux**) 
 is necessary even for small apps like this one. Bad practices like passing functions
 down to children components can be avoided this way. Also, MVC layers will be more 
 loosely coupled and clean.
