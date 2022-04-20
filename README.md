@@ -20,6 +20,19 @@ Note for next steps of development: test suite should be expanded to test app lo
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
