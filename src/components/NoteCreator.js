@@ -25,7 +25,7 @@ const NoteCreator = ({triggerRefresh}) => {
 
     return (
         <>
-            <div className='create-container'>
+            <div className='create-container' data-testid='noteCreator'>
                 <input className='note-create'
                        onChange={event => setInputText(event.target.value)}
                        type="text"

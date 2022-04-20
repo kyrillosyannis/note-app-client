@@ -4,7 +4,7 @@ const NoteHeader = ({totalNumberOfNotes}) => {
 
     return (
         <>
-            <div className='note-header'>You have {totalNumberOfNotes} todos</div>
+            <div className='note-header' data-testid='noteHeader'>You have {totalNumberOfNotes} todos</div>
         </>
     );
 }

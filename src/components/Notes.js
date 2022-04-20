@@ -20,7 +20,7 @@ const Notes = ({notes, triggerRefresh}) => {
     };
 
     return (
-        <>
+        <div data-testid='notes'>
             {notes.map(note => <div
                 key={note.id}
                 className='note-border'
@@ -34,7 +34,7 @@ const Notes = ({notes, triggerRefresh}) => {
                 </p>
                 <div onClick={() => deleteSelectedNote(note)} className='icon'><p>ⓧ</p></div>
             </div>)}
-        </>
+        </div>
     );
 }
 
